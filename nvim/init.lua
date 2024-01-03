@@ -1,6 +1,3 @@
--- Set the leader key
-vim.g.mapleader = " "
-
 -- Download Lazy, if it doesn't exist
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -14,6 +11,9 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
+
+-- Set the leader key
+vim.g.mapleader = ' '
 
 -- Setup Lazy with necessary plugins.
 require("lazy").setup("plugins")
