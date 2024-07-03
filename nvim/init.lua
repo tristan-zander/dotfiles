@@ -17,3 +17,6 @@ vim.g.mapleader = ' '
 
 -- Setup Lazy with necessary plugins.
 require("lazy").setup("plugins")
+
+-- Add keybinds
+require('keybinds')
