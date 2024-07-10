@@ -1,0 +1,52 @@
+[cursor]
+blink_interval = 750
+blink_timeout = 2
+unfocused_hollow = true
+
+[cursor.style]
+blinking = "On"
+
+[font]
+size = 12.0
+
+[font.bold]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "Hack Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "Hack Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "Hack Nerd Font"
+style = "Regular"
+
+[mouse]
+hide_when_typing = true
+
+[shell]
+args = ["-l", "-c", "tmux attach || tmux"]
+program = "/bin/zsh"
+
+[window]
+decorations = "full"
+dynamic_title = true
+opacity = 0.8
+startup_mode = "Windowed"
+title = "Terminal"
+option_as_alt = "Both"
+
+[window.padding]
+x = 2
+y = 2
+
+[keyboard]
+bindings = [
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left",  mods = "Alt", chars = "\u001BB" },
+]
+
