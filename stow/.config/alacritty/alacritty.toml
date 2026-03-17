@@ -28,7 +28,7 @@ style = "Regular"
 [mouse]
 hide_when_typing = true
 
-[shell]
+[terminal.shell]
 args = ["-l", "-c", "tmux attach || tmux"]
 program = "/usr/local/bin/get-user-shell.sh"
 
