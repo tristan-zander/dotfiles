@@ -15,6 +15,11 @@ function check_for_command() {
 
 function preconditions() {
 	fail=0
+	if ! check_for_command zsh; then
+		echoerr "ZSH is not installed"
+		fail=1
+	fi
+
 	if ! check_for_command stow; then
 		echoerr "GNU Stow is not installed"
 		fail=1
@@ -49,7 +54,7 @@ function install_stowfiles() {
 function install_helpers() {
 	script_dir=$(dirname $(realpath "${BASH_SOURCE[0]}"))
 
-	if [[ -f "$script_dir/get-user-shell.sh" ]]; then
+	if [[ -f "/usr/local/bin/get-user-shell.sh" ]]; then
 		echo "get-user-shell.sh already linked in /usr/local/bin, skipping."
 		return
 	fi

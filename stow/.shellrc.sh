@@ -15,5 +15,5 @@ alias=(
 
 # Setup aliases
 for a in "${alias[@]}"; do
-    alias $a
+    alias "$a"
 done
