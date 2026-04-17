@@ -48,7 +48,7 @@ function preconditions() {
 }
 
 function install_stowfiles() {
-	stow -t "$HOME" "$STOW_DIR"
+	stow --restow -t "$HOME" "$STOW_DIR"
 }
 
 function install_helpers() {
