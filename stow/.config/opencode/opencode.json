@@ -27,5 +27,8 @@
         }
       }
     }
-  }
+  },
+  "plugin": [
+    "@tarquinen/opencode-dcp@latest"
+  ]
 }
